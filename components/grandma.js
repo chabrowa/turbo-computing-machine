@@ -1,10 +1,12 @@
-class grandma {
+class Grandma {
 
-    constructor() {
-        this.price = 100;
+    constructor(element) {
+      this.price = 100;
+      this.production = 0.5;
+      this.element = element;
     }
 
-    currentPrice() {
-        this.price += 50;
+    currentPrice(currentQuantity) {
+        this.price = 100 + currentQuantity*50;
     }
 }

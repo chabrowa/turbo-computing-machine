@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <HTML>
-    <head>
-        <script src="dist/all.js"></script>
-    </head>
+  <head>
+    <script src="dist/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
+  </head>
 
-    <body>
-        <div id="cookie"></div>
-        <div id="speeders">
-            <div id="cursors"></div>
-            <div id="grandmas"></div>
-        </div>
-    </body>
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        window.game = new Game(document.getElementById("speeders"));
+      })
+    </script>
+
+    <div>
+      <div id="cookie"></div>
+      <div id="cookieNumber"></div>
+    </div>
+
+    <div id="speeders">
+      <div id="cursors"></div>
+      <div id="cursorPrice"></div>
+      <div id="grandmas"></div>
+    </div>
+  </body>
 </HTML>
